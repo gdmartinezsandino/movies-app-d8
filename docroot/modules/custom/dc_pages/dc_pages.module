@@ -1,0 +1,27 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+function dc_pages_theme($existing, $type, $theme, $path) {
+  return [
+    'dc_home_blocks' => [
+      'variables' => [
+        'block_upcoming_movies' => '',
+        'block_popular_movies' => '',
+        'block_popular_actors' => '',
+      ],
+    ],
+    'dc_movies_blocks' => [
+      'variables' => [
+        'block_upcoming_movies' => '',
+        'block_popular_movies' => '',
+      ],
+    ],
+    'dc_actors_blocks' => [
+      'variables' => [
+        'block_popular_actors' => '',
+      ],
+    ],
+  ];
+}

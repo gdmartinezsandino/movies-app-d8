@@ -1,0 +1,10 @@
+name: Drupal Challenge Content Import
+type: module
+description: 'Module to import content from themoviedb.org'
+package: Custom
+dependencies:
+  - dc_vocabularies
+  - dc_content_entities
+  - media
+version: '8.x-1.0'
+core: 8.x

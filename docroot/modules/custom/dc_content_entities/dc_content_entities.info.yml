@@ -1,0 +1,9 @@
+name: Drupal Challenge Movies - Content Entities
+type: module
+description: 'To create the required Content Entities for this site'
+package: Custom
+dependencies:
+  - media
+  - dc_vocabularies
+version: '8.x-1.0'
+core: 8.x

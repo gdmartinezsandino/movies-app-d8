@@ -1,0 +1,33 @@
+.p-movie-detail {
+  > [data-quickedit-field-id] {
+    > div:first-child {
+      @include font-bold;
+      font-size: 24px;
+      line-height: 28px;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    > div:last-child {
+      img {
+        display: block;
+        width: auto;
+        margin-right: auto;
+        margin-left: auto;
+        max-height: 250px;
+      }
+
+      iframe {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+      }
+    }
+
+    &:nth-child(n+2) {
+      > div:first-child {
+        margin-top: 30px;
+      }
+    }
+  }
+}

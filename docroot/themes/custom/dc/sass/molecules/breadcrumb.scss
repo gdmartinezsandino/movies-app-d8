@@ -1,0 +1,29 @@
+.m-breadcrumb {
+  margin-bottom: 25px;
+
+  ol {
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+
+    li {
+      display: inline-block;
+
+      &:nth-child(n+2) {
+        position: relative;
+        margin-left: 10px;
+        padding-left: 10px;
+
+        &:before {
+          content: '/';
+          position: absolute;
+          top: 0;
+          left: -1px;
+          font-size: inherit;
+          color: $color-primary;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+dc_content_import.connection_settings:
+  path: '/admin/config/services/api-connection-settings'
+  defaults:
+    _form: '\Drupal\dc_content_import\Form\ConnectionSettingsForm'
+    _title: 'API Connection Settings'
+  requirements:
+    _permission: 'admin themoviedb connection settings'
+  options:
+    _admin_route: 'TRUE'

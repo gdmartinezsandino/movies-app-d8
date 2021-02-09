@@ -1,0 +1,57 @@
+@mixin font-light {
+  font-family: $font;
+  font-weight: 300;
+}
+
+@mixin font-regular {
+  font-family: $font;
+  font-weight: 400;
+}
+
+@mixin font-bold {
+  font-family: $font;
+  font-weight: 700;
+}
+
+@mixin paragraph-styles {
+  @include font-regular;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+h1, h2, h3, h4 {
+  @include font-bold;
+}
+
+h1 {
+  font-size: 27px;
+  line-height: 32px;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+h3 {
+  font-size: 20px;
+  line-height: 25px;
+}
+
+p, a {
+  @include paragraph-styles;
+}
+
+a {
+  @include font-bold;
+  color: $color-primary;
+  transition-property: color;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in-out;
+
+  &:hover {
+    color: darken($color-primary, 5%);
+    transition-timing-function: ease-in;
+    text-decoration: none;
+  }
+}

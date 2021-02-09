@@ -1,0 +1,6 @@
+name: Drupal Challenge Pages
+type: module
+description: 'Drupal Challenge Pages'
+package: Custom
+version: '8.x-1.0'
+core: 8.x

@@ -1,0 +1,18 @@
+@charset 'utf-8';
+
+@import 'assets/bootstrap4';
+@import 'assets/swiper';
+
+@import 'base/variables';
+@import 'base/typography';
+@import 'base/basics';
+
+@import 'molecules/breadcrumb';
+@import 'molecules/content-item';
+
+@import 'organisms/header';
+@import 'organisms/footer';
+
+@import 'pages/homepage';
+@import 'pages/movie-detail';
+@import 'pages/actor-detail';

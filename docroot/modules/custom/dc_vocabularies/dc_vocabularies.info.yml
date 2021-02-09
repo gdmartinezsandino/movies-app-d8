@@ -1,0 +1,6 @@
+name: Drupal Challenge Movies - Vocabularies
+type: module
+description: 'To create the required Vocabularies for this site'
+package: Custom
+version: '8.x-1.0'
+core: 8.x

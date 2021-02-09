@@ -1,0 +1,6 @@
+services:
+  dc_content_import.commands:
+    class: \Drupal\dc_content_import\Commands\DCImportCommands
+    arguments: ['@entity_type.manager', '@logger.factory', '@dc_content_import.tools']
+    tags:
+      - { name: drush.command }

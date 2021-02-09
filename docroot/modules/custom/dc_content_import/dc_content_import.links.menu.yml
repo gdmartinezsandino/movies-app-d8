@@ -1,0 +1,5 @@
+dc_content_import.connection_settings:
+  title: 'themoviedb.org Connection Settings'
+  description: 'Configure themoviedb.org API data'
+  parent: system.admin_config_services
+  route_name: dc_content_import.connection_settings

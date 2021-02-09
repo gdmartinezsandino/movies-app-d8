@@ -1,0 +1,44 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.home
+    - field.field.node.actors.body
+    - field.field.node.actors.field_birthday
+    - field.field.node.actors.field_deathday
+    - field.field.node.actors.field_gallery_of_images
+    - field.field.node.actors.field_original_id
+    - field.field.node.actors.field_photo
+    - field.field.node.actors.field_place_of_birth
+    - field.field.node.actors.field_popularity
+    - field.field.node.actors.field_website
+    - image.style.medium
+    - node.type.actors
+  module:
+    - image
+    - user
+id: node.actors.home
+targetEntityType: node
+bundle: actors
+mode: home
+content:
+  field_photo:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: medium
+      image_link: content
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  body: true
+  field_birthday: true
+  field_deathday: true
+  field_gallery_of_images: true
+  field_original_id: true
+  field_place_of_birth: true
+  field_popularity: true
+  field_website: true
+  links: true
+  search_api_excerpt: true

@@ -1,0 +1,4 @@
+admin themoviedb connection settings:
+  title: 'Admin themoviedb connection settings'
+  description: 'Allow access to Admin themoviedb connection settings.'
+  restrict access: true

@@ -1,0 +1,23 @@
+home.render:
+  path: '/home'
+  defaults:
+    _controller: '\Drupal\dc_pages\Controller\HomeController::homeRender'
+    _title: 'Home'
+  requirements:
+    _permission: 'access content'
+
+movies.render:
+  path: '/movies'
+  defaults:
+    _controller: '\Drupal\dc_pages\Controller\MoviesController::moviesRender'
+    _title: 'Movies'
+  requirements:
+    _permission: 'access content'
+
+actors.render:
+  path: '/actors'
+  defaults:
+    _controller: '\Drupal\dc_pages\Controller\ActorsController::actorsRender'
+    _title: 'Actors'
+  requirements:
+    _permission: 'access content'

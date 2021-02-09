@@ -1,0 +1,45 @@
+.m-content-item {
+  > a {
+    color: initial;
+  }
+
+  &__thumbnail {
+    img {
+      width: 180px;
+    }
+  }
+
+  &__content {
+    h2 {
+      font-size: 18px;
+      text-align: center;
+    }
+
+    .genres {
+      margin-top: 10px;
+
+      span {
+        position: relative;
+        display: inline-block;
+        height: 26px;
+        margin: 0 10px 10px 0;
+        padding: 0 20px 0 23px;
+        border-radius: 3px;
+        background-color: #EEEEEE;
+        color: #999999;
+        line-height: 26px;
+      }
+    }
+
+    .date {
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 5px 8px;
+      background-color: red;
+      border-bottom-left-radius: 4px;
+      color: #FFFFFF;
+      text-align: center;
+    }
+  }
+}

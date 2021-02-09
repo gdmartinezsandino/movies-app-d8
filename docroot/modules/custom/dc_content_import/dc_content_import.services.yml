@@ -1,0 +1,4 @@
+services:
+  dc_content_import.tools:
+    class: Drupal\dc_content_import\Service\ApiImportTools
+    arguments: ['@entity_type.manager', '@current_user', '@http_client', '@logger.factory', '@messenger', '@config.factory', '@database', '@state']

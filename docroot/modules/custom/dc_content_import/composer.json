@@ -1,0 +1,17 @@
+{
+  "name": "drupal/dc_content_import",
+  "description": "Module to import content from The movies DB.",
+  "type": "drupal-module",
+  "autoload": {
+    "psr-4": {
+      "Drupal\\dc_content_import\\": "src/"
+    }
+  },
+  "extra": {
+    "drush": {
+      "services": {
+        "drush.services.yml": "^9"
+      }
+    }
+  }
+}

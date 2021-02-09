@@ -1,0 +1,56 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.actors.body
+    - field.field.node.actors.field_birthday
+    - field.field.node.actors.field_deathday
+    - field.field.node.actors.field_gallery_of_images
+    - field.field.node.actors.field_original_id
+    - field.field.node.actors.field_photo
+    - field.field.node.actors.field_place_of_birth
+    - field.field.node.actors.field_popularity
+    - field.field.node.actors.field_website
+    - image.style.medium
+    - node.type.actors
+  module:
+    - image
+    - text
+    - user
+id: node.actors.teaser
+targetEntityType: node
+bundle: actors
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 2
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  field_photo:
+    type: image
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      image_style: medium
+      image_link: content
+    third_party_settings: {  }
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_birthday: true
+  field_deathday: true
+  field_gallery_of_images: true
+  field_original_id: true
+  field_place_of_birth: true
+  field_popularity: true
+  field_website: true
+  search_api_excerpt: true

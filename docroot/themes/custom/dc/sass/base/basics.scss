@@ -1,0 +1,18 @@
+body {
+  padding-top: 90px !important;
+
+  &.toolbar-fixed {
+    padding-top: calc(90px + 39px) !important;
+
+    &.toolbar-horizontal {
+      &.toolbar-tray-open {
+        padding-top: calc(90px + 96px) !important;
+      }
+    }
+  }
+
+  main[role='main'] {
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+}

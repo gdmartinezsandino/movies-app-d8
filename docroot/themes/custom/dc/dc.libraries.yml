@@ -1,0 +1,13 @@
+global-css:
+  css:
+    theme:
+      css/theme.min.css: {}
+      'https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap': {type: external}
+
+global-js:
+  js:
+    js/theme.min.js: {}
+
+  dependencies:
+    - core/drupal
+    - core/jquery

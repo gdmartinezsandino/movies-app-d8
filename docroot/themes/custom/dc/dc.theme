@@ -1,0 +1,23 @@
+<?php
+
+function dc_preprocess_page(&$variables) {
+
+}
+
+function dc_preprocess_node(&$variables) {
+  $node = $variables['node'];
+  $content_type = $node->bundle();
+
+  if ($content_type === 'movie' && $variables['view_mode'] === 'teaser') {
+    $view_builder = \Drupal::entityTypeManager()->getViewBuilder('node');
+
+    $genres = $node->get('field_movie_genre')->referencedEntities();
+    $rendered_genres = [];
+
+    foreach ($genres as $item) {
+      $rendered_genres[] = $item->label();
+    }
+
+    $variables['genres'] = $rendered_genres;
+  }
+}
