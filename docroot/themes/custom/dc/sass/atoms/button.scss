@@ -1,0 +1,16 @@
+.a-button {
+    background: #1462ff;
+    border-radius: 12px;
+    box-shadow: 0 6px 30px -10px #4a74c9;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 5px 25px;
+    line-height: 30px;
+    font-size: 18px;
+    color: #FFFFFF;
+    border: none;
+}
+
+.form-submit {
+    @extend .a-button;
+}
